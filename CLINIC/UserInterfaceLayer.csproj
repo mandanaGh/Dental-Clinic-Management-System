@@ -1,0 +1,771 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C1E96E2A-B399-485D-A8C4-D102CF42162A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UserInterface</RootNamespace>
+    <AssemblyName>ClinicManagement</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>http://localhost/ClinicManagement/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AccessUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccessUI.Designer.cs">
+      <DependentUpon>AccessUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppointmentUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppointmentUI.Designer.cs">
+      <DependentUpon>AppointmentUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CallAlarmUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CallAlarmUI.Designer.cs">
+      <DependentUpon>CallAlarmUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePasswordUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangePasswordUI.designer.cs">
+      <DependentUpon>ChangePasswordUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BackupUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BackupUI.Designer.cs">
+      <DependentUpon>BackupUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditPhoneBookUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditPhoneBookUI.designer.cs">
+      <DependentUpon>EditPhoneBookUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowPhoneBookUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowPhoneBookUI.Designer.cs">
+      <DependentUpon>ShowPhoneBookUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LaboratoryServiceUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LaboratoryServiceUI.Designer.cs">
+      <DependentUpon>LaboratoryServiceUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditLaboratoryUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditLaboratoryUI.designer.cs">
+      <DependentUpon>EditLaboratoryUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\LaboratoryReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\LaboratoryReport.Designer.cs">
+      <DependentUpon>LaboratoryReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowLaboratoryUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowLaboratoryUI.designer.cs">
+      <DependentUpon>ShowLaboratoryUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditLaboratoryStateUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditLaboratoryStateUI.designer.cs">
+      <DependentUpon>EditLaboratoryStateUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowLaboratoryStateUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowLaboratoryStateUI.designer.cs">
+      <DependentUpon>ShowLaboratoryStateUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EquipmentExpiredAlarmUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EquipmentExpiredAlarmUI.Designer.cs">
+      <DependentUpon>EquipmentExpiredAlarmUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EquipmentShortageAlarmUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EquipmentShortageAlarmUI.Designer.cs">
+      <DependentUpon>EquipmentShortageAlarmUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditPatientUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditPatientUI.Designer.cs">
+      <DependentUpon>EditPatientUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditJobUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditJobUI.designer.cs">
+      <DependentUpon>EditJobUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\PatientListReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\PatientListReport.Designer.cs">
+      <DependentUpon>PatientListReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\CostReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\CostReport.Designer.cs">
+      <DependentUpon>CostReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\PrescriptionListReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\PrescriptionListReport.Designer.cs">
+      <DependentUpon>PrescriptionListReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RestoreBackupUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RestoreBackupUI.Designer.cs">
+      <DependentUpon>RestoreBackupUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScannerUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScannerUI.Designer.cs">
+      <DependentUpon>ScannerUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowJobUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowJobUI.designer.cs">
+      <DependentUpon>ShowJobUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoctorLOV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoctorLOV.Designer.cs">
+      <DependentUpon>DoctorLOV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditToothColorUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditToothColorUI.designer.cs">
+      <DependentUpon>EditToothColorUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowToothColorUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowToothColorUI.designer.cs">
+      <DependentUpon>ShowToothColorUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoctorUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoctorUI.Designer.cs">
+      <DependentUpon>DoctorUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditAppointmentTypeUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditAppointmentTypeUI.designer.cs">
+      <DependentUpon>EditAppointmentTypeUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceHistoryUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServiceHistoryUI.Designer.cs">
+      <DependentUpon>ServiceHistoryUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen.designer.cs">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuUI.Designer.cs">
+      <DependentUpon>MenuUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowAppointmentTypeUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowAppointmentTypeUI.designer.cs">
+      <DependentUpon>ShowAppointmentTypeUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditDiseasesUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditDiseasesUI.Designer.cs">
+      <DependentUpon>EditDiseasesUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditEquipmentUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditEquipmentUI.Designer.cs">
+      <DependentUpon>EditEquipmentUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditInsuranceTypeUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditInsuranceTypeUI.Designer.cs">
+      <DependentUpon>EditInsuranceTypeUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditRoleUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditRoleUI.designer.cs">
+      <DependentUpon>EditRoleUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditServiceTypeUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditServiceTypeUI.Designer.cs">
+      <DependentUpon>EditServiceTypeUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditSpecialistUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditSpecialistUI.Designer.cs">
+      <DependentUpon>EditSpecialistUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditUserUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditUserUI.designer.cs">
+      <DependentUpon>EditUserUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EquipmentHistoryUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EquipmentHistoryUI.Designer.cs">
+      <DependentUpon>EquipmentHistoryUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EquipmentLOV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EquipmentLOV.Designer.cs">
+      <DependentUpon>EquipmentLOV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExceptionHandlerUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExceptionHandlerUI.designer.cs">
+      <DependentUpon>ExceptionHandlerUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowPatientUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowPatientUI.Designer.cs">
+      <DependentUpon>ShowPatientUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AccessUI.resx">
+      <DependentUpon>AccessUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppointmentUI.resx">
+      <DependentUpon>AppointmentUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BackupUI.resx">
+      <DependentUpon>BackupUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CallAlarmUI.resx">
+      <DependentUpon>CallAlarmUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangePasswordUI.resx">
+      <DependentUpon>ChangePasswordUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditPhoneBookUI.resx">
+      <DependentUpon>EditPhoneBookUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowPhoneBookUI.resx">
+      <DependentUpon>ShowPhoneBookUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LaboratoryServiceUI.resx">
+      <DependentUpon>LaboratoryServiceUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditLaboratoryUI.resx">
+      <DependentUpon>EditLaboratoryUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Report\LaboratoryReport.rdlc" />
+    <EmbeddedResource Include="Report\LaboratoryReport.resx">
+      <DependentUpon>LaboratoryReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowLaboratoryUI.resx">
+      <DependentUpon>ShowLaboratoryUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditLaboratoryStateUI.resx">
+      <DependentUpon>EditLaboratoryStateUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowLaboratoryStateUI.resx">
+      <DependentUpon>ShowLaboratoryStateUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EquipmentExpiredAlarmUI.resx">
+      <DependentUpon>EquipmentExpiredAlarmUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EquipmentShortageAlarmUI.resx">
+      <DependentUpon>EquipmentShortageAlarmUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditPatientUI.resx">
+      <DependentUpon>EditPatientUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditJobUI.resx">
+      <DependentUpon>EditJobUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\PatientListReport.rdlc" />
+    <EmbeddedResource Include="Report\PatientListReport.resx">
+      <DependentUpon>PatientListReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\CostReport.rdlc" />
+    <EmbeddedResource Include="Report\CostReport.resx">
+      <DependentUpon>CostReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\PrescriptionListReport.rdlc" />
+    <EmbeddedResource Include="Report\PrescriptionListReport.resx">
+      <DependentUpon>PrescriptionListReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RestoreBackupUI.resx">
+      <DependentUpon>RestoreBackupUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScannerUI.resx">
+      <DependentUpon>ScannerUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowJobUI.resx">
+      <DependentUpon>ShowJobUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoctorLOV.resx">
+      <DependentUpon>DoctorLOV.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditToothColorUI.resx">
+      <DependentUpon>EditToothColorUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowToothColorUI.resx">
+      <DependentUpon>ShowToothColorUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoctorUI.resx">
+      <DependentUpon>DoctorUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditAppointmentTypeUI.resx">
+      <DependentUpon>EditAppointmentTypeUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditSpecialistUI.resx">
+      <DependentUpon>EditSpecialistUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServiceHistoryUI.resx">
+      <DependentUpon>ServiceHistoryUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuUI.resx">
+      <DependentUpon>MenuUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowAppointmentTypeUI.resx">
+      <DependentUpon>ShowAppointmentTypeUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditDiseasesUI.resx">
+      <DependentUpon>EditDiseasesUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditEquipmentUI.resx">
+      <DependentUpon>EditEquipmentUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditInsuranceTypeUI.resx">
+      <DependentUpon>EditInsuranceTypeUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditRoleUI.resx">
+      <DependentUpon>EditRoleUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditServiceTypeUI.resx">
+      <DependentUpon>EditServiceTypeUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditUserUI.resx">
+      <DependentUpon>EditUserUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EquipmentHistoryUI.resx">
+      <DependentUpon>EquipmentHistoryUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EquipmentLOV.resx">
+      <DependentUpon>EquipmentLOV.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExceptionHandlerUI.resx">
+      <DependentUpon>ExceptionHandlerUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowPatientUI.resx">
+      <DependentUpon>ShowPatientUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowDiseasesUI.resx">
+      <DependentUpon>ShowDiseasesUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowEquipmentUI.resx">
+      <DependentUpon>ShowEquipmentUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowInsuranceTypeUI.resx">
+      <DependentUpon>ShowInsuranceTypeUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowRoleUI.resx">
+      <DependentUpon>ShowRoleUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowServiceTypeUI.resx">
+      <DependentUpon>ShowServiceTypeUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowSpecialistUI.resx">
+      <DependentUpon>ShowSpecialistUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowUserUI.resx">
+      <DependentUpon>ShowUserUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserLogin.resx">
+      <DependentUpon>UserLogin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\DataSources\BusinessObjectLayer.CostReportItemsBOL.datasource" />
+    <None Include="Properties\DataSources\BusinessObjectLayer.CostReportPatientBOL.datasource" />
+    <None Include="Properties\DataSources\BusinessObjectLayer.LaboratoryReportItemsBOL.datasource" />
+    <None Include="Properties\DataSources\BusinessObjectLayer.PatientListReportItemsBOL.datasource" />
+    <None Include="Properties\DataSources\BusinessObjectLayer.PatientListReportPatientBOL.datasource" />
+    <None Include="Properties\DataSources\BusinessObjectLayer.PrescriptionListReportItemsBOL.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ShowDiseasesUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowDiseasesUI.Designer.cs">
+      <DependentUpon>ShowDiseasesUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowEquipmentUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowEquipmentUI.Designer.cs">
+      <DependentUpon>ShowEquipmentUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowInsuranceTypeUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowInsuranceTypeUI.Designer.cs">
+      <DependentUpon>ShowInsuranceTypeUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowRoleUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowRoleUI.designer.cs">
+      <DependentUpon>ShowRoleUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowServiceTypeUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowServiceTypeUI.Designer.cs">
+      <DependentUpon>ShowServiceTypeUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowSpecialistUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowSpecialistUI.Designer.cs">
+      <DependentUpon>ShowSpecialistUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowUserUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowUserUI.designer.cs">
+      <DependentUpon>ShowUserUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserLogin.designer.cs">
+      <DependentUpon>UserLogin.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLogicLibrary\BusinessLogicLayer.csproj">
+      <Project>{0B49A33F-46CE-46CA-A354-C0C12DF59F99}</Project>
+      <Name>BusinessLogicLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BusinessObjectLayer\BusinessObjectLayer.csproj">
+      <Project>{093AB4DF-87B0-4498-B048-7E21E35881A1}</Project>
+      <Name>BusinessObjectLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ComplexDataType\ComplexDataType.csproj">
+      <Project>{8248F680-4E16-4296-9CE6-04BFCEB925AF}</Project>
+      <Name>ComplexDataType %28ComplexDataType\ComplexDataType%29</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataConvertor\DataConvertor.csproj">
+      <Project>{449678DD-AD6E-421A-8ED8-9A1D6E2650B8}</Project>
+      <Name>DataConvertor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Scanner\Scanner.csproj">
+      <Project>{8810B65C-DFE9-4FC7-8D6C-FBC052FC62EE}</Project>
+      <Name>Scanner</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\FarsiLibrary.Resources.dll" />
+    <Content Include="bin\Debug\FarsiLibrary.Utils.dll" />
+    <Content Include="bin\Debug\FarsiLibrary.Win.dll" />
+    <Content Include="bin\Debug\Janus.Data.v3.dll" />
+    <Content Include="bin\Debug\Janus.Windows.ButtonBar.v3.dll" />
+    <Content Include="bin\Debug\Janus.Windows.Common.v3.dll" />
+    <Content Include="bin\Debug\Janus.Windows.FilterEditor.v3.dll" />
+    <Content Include="bin\Debug\Janus.Windows.GridEX.v3.dll" />
+    <Content Include="bin\Debug\Janus.Windows.Ribbon.v3.dll" />
+    <Content Include="bin\Debug\Janus.Windows.UI.v3.dll" />
+    <Content Include="Icon.ico" />
+    <Content Include="Icon\Laboratory.png" />
+    <Content Include="Icon\LaboratoryReport.png" />
+    <Content Include="Icon\LaboratoryState.png" />
+    <Content Include="Clinic_log.ldf">
+      <DependentUpon>Clinic.mdf</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icon\About.png" />
+    <Content Include="Icon\Alarm.png" />
+    <Content Include="Icon\Backup.png" />
+    <Content Include="Icon\Banner.jpg" />
+    <Content Include="bin\Debug\JntMsgBox.dll" />
+    <Content Include="bin\Debug\Microsoft.Office.Interop.SmartTag.dll" />
+    <Content Include="bin\Debug\Noogen.Validation.dll" />
+    <Content Include="Clinic.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icon\Access.png" />
+    <Content Include="Icon\Appointment.png" />
+    <Content Include="Icon\Cascade.png" />
+    <Content Include="Icon\ChangeUser.png" />
+    <Content Include="Icon\Close.png" />
+    <Content Include="Icon\CostReport.png" />
+    <Content Include="Icon\Diseases.jpg" />
+    <Content Include="Icon\Doctor.png" />
+    <Content Include="Icon\Equipment.png" />
+    <Content Include="Icon\Horizontal.png" />
+    <Content Include="Icon\Insurance.png" />
+    <Content Include="Icon\Job.png" />
+    <Content Include="Icon\Minimize.png" />
+    <Content Include="Icon\NewPatient.jpg" />
+    <Content Include="Icon\Password.png" />
+    <Content Include="Icon\Patient.png" />
+    <Content Include="Icon\PatientInfo.gif" />
+    <Content Include="Icon\PatientListReport.png" />
+    <Content Include="Icon\PhoneBook.png" />
+    <Content Include="Icon\PrescriptionListReport.png" />
+    <Content Include="Icon\Restore.png" />
+    <Content Include="Icon\RestoreBackup.png" />
+    <Content Include="Icon\Role.png" />
+    <Content Include="Icon\Service.png" />
+    <Content Include="Icon\Specialist.png" />
+    <Content Include="Icon\Tools.png" />
+    <Content Include="Icon\Tooth.png" />
+    <Content Include="Icon\Tooth1.jpg" />
+    <Content Include="Icon\Tooth2.jpg" />
+    <Content Include="Icon\User.png" />
+    <Content Include="Icon\Icon.ico" />
+    <Content Include="Icon\LogOut.png" />
+    <Content Include="Icon\Vertical.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v9.1, Version=9.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v9.1, Version=9.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v9.1, Version=9.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="FarsiLibrary.Resources, Version=1.9.0.0, Culture=neutral, PublicKeyToken=def7c46cace23f8f, processorArchitecture=MSIL" />
+    <Reference Include="FarsiLibrary.Utils, Version=1.9.0.0, Culture=neutral, PublicKeyToken=def7c46cace23f8f, processorArchitecture=MSIL" />
+    <Reference Include="FarsiLibrary.Win, Version=1.9.0.0, Culture=neutral, PublicKeyToken=def7c46cace23f8f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Documents and Settings\Administrator\Desktop\FarsiLibrary.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Data.v3, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Janus.Windows.ButtonBar.v3, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Janus.Windows.Common.v3, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Janus.Windows.GridEX.v3, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Janus.Windows.Ribbon.v3, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Janus.Windows.UI.v3, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="JntMsgBox, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Interop.SmartTag, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Noogen.Validation, Version=1.0.1927.37075, Culture=neutral" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SqlXml" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
