@@ -1,0 +1,5 @@
+F:\Project\CLINIC\DataAccessObjectLayer\bin\Release\DataObjectLayer.dll
+F:\Project\CLINIC\DataAccessObjectLayer\bin\Release\DataObjectLayer.pdb
+F:\Project\CLINIC\DataAccessObjectLayer\obj\Release\ResolveAssemblyReference.cache
+F:\Project\CLINIC\DataAccessObjectLayer\obj\Release\DataObjectLayer.dll
+F:\Project\CLINIC\DataAccessObjectLayer\obj\Release\DataObjectLayer.pdb

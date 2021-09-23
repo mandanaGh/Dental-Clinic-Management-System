@@ -1,0 +1,5 @@
+F:\Project\CLINIC\DataConvertor\bin\Release\DataConvertor.dll
+F:\Project\CLINIC\DataConvertor\bin\Release\DataConvertor.pdb
+F:\Project\CLINIC\DataConvertor\obj\Release\ResolveAssemblyReference.cache
+F:\Project\CLINIC\DataConvertor\obj\Release\DataConvertor.dll
+F:\Project\CLINIC\DataConvertor\obj\Release\DataConvertor.pdb

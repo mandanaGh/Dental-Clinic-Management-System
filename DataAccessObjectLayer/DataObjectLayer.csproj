@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3155953B-0C2A-4B6E-8346-827C2EC0FAFD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DataObjectLayer</RootNamespace>
+    <AssemblyName>DataObjectLayer</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppointmentTypeDOL.cs" />
+    <Compile Include="CityDOL.cs" />
+    <Compile Include="SubjectDOL.cs" />
+    <Compile Include="PhoneBookDOL.cs" />
+    <Compile Include="LaboratoryServiceDOL.cs" />
+    <Compile Include="LaboratoryDOL.cs" />
+    <Compile Include="LaboratoryStateDOL.cs" />
+    <Compile Include="SecurityDOL.cs" />
+    <Compile Include="ServiceHistoryDOL.cs" />
+    <Compile Include="JobDOL.cs" />
+    <Compile Include="ToothColorDOL.cs" />
+    <Compile Include="DoctorDOL.cs" />
+    <Compile Include="RecieveDOL.cs" />
+    <Compile Include="ServiceDOL.cs" />
+    <Compile Include="SpecialistDOL.cs" />
+    <Compile Include="DiseasesDOL.cs" />
+    <Compile Include="EquipmentDOL.cs" />
+    <Compile Include="EquipmentHistoryDOL.cs" />
+    <Compile Include="ExceptionHandlerDOL.cs" />
+    <Compile Include="ImageDOL.cs" />
+    <Compile Include="InsuranceTypeDOL.cs" />
+    <Compile Include="PatientDiseasesDOL.cs" />
+    <Compile Include="PatientDOL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoleDOL.cs" />
+    <Compile Include="ServiceTypeDOL.cs" />
+    <Compile Include="UserDOL.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
