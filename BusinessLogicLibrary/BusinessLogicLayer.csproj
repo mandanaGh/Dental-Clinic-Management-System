@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0B49A33F-46CE-46CA-A354-C0C12DF59F99}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BusinessLogicLayer</RootNamespace>
+    <AssemblyName>BusinessLogicLayer</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccessBLL.cs" />
+    <Compile Include="AppointmentTypeBLL.cs" />
+    <Compile Include="CityBLL.cs" />
+    <Compile Include="SubjectBLL.cs" />
+    <Compile Include="PhoneBookBLL.cs" />
+    <Compile Include="LaboratoryServiceBLL.cs" />
+    <Compile Include="LaboratoryBLL.cs" />
+    <Compile Include="LaboratoryStateBLL.cs" />
+    <Compile Include="DatabaseBLL.cs">
+    </Compile>
+    <Compile Include="Report\LaboratoryReportBLL.cs" />
+    <Compile Include="Report\PatientListReportBLL.cs" />
+    <Compile Include="Report\PrescriptionListReportBLL.cs" />
+    <Compile Include="Report\CostReportBLL.cs" />
+    <Compile Include="SecurityBLL.cs" />
+    <Compile Include="ServiceHistoryBLL.cs" />
+    <Compile Include="JobBLL.cs" />
+    <Compile Include="ToothColorBLL.cs" />
+    <Compile Include="DoctorBLL.cs" />
+    <Compile Include="RecieveBLL.cs" />
+    <Compile Include="ServiceBLL.cs" />
+    <Compile Include="SpecialistBLL.cs" />
+    <Compile Include="DiseasesBLL.cs" />
+    <Compile Include="Encryptor.cs" />
+    <Compile Include="EquipmentBLL.cs" />
+    <Compile Include="EquipmentHistoryBLL.cs" />
+    <Compile Include="ExceptionHandlerBLL.cs" />
+    <Compile Include="ImageBLL.cs" />
+    <Compile Include="InsuranceTypeBLL.cs" />
+    <Compile Include="KeyboardControler.cs" />
+    <Compile Include="PatientBLL.cs" />
+    <Compile Include="PatientDiseasesBLL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoleBLL.cs" />
+    <Compile Include="ServerBLL.cs" />
+    <Compile Include="ServiceTypeBLL.cs" />
+    <Compile Include="UserBLL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessObjectLayer\BusinessObjectLayer.csproj">
+      <Project>{093AB4DF-87B0-4498-B048-7E21E35881A1}</Project>
+      <Name>BusinessObjectLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ComplexDataType\ComplexDataType.csproj">
+      <Project>{8248F680-4E16-4296-9CE6-04BFCEB925AF}</Project>
+      <Name>ComplexDataType %28ComplexDataType\ComplexDataType%29</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccessLibrary\DataAccessLayer.csproj">
+      <Project>{55758E78-CCBF-49CF-B93C-8F725C8A9C73}</Project>
+      <Name>DataAccessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccessObjectLayer\DataObjectLayer.csproj">
+      <Project>{3155953B-0C2A-4B6E-8346-827C2EC0FAFD}</Project>
+      <Name>DataObjectLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataConvertor\DataConvertor.csproj">
+      <Project>{449678DD-AD6E-421A-8ED8-9A1D6E2650B8}</Project>
+      <Name>DataConvertor</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

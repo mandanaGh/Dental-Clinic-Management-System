@@ -1,0 +1,15 @@
+F:\Project\CLINIC\BusinessLogicLibrary\bin\Release\BusinessObjectLayer.dll
+F:\Project\CLINIC\BusinessLogicLibrary\bin\Release\ComplexDataType.dll
+F:\Project\CLINIC\BusinessLogicLibrary\bin\Release\DataConvertor.dll
+F:\Project\CLINIC\BusinessLogicLibrary\bin\Release\DataObjectLayer.dll
+F:\Project\CLINIC\BusinessLogicLibrary\bin\Release\ComplexDataType.pdb
+F:\Project\CLINIC\BusinessLogicLibrary\bin\Release\DataConvertor.pdb
+F:\Project\CLINIC\BusinessLogicLibrary\bin\Release\DataObjectLayer.pdb
+F:\Project\CLINIC\BusinessLogicLibrary\bin\Release\BusinessObjectLayer.pdb
+F:\Project\CLINIC\BusinessLogicLibrary\obj\Release\ResolveAssemblyReference.cache
+F:\Project\CLINIC\BusinessLogicLibrary\bin\Release\BusinessLogicLayer.dll
+F:\Project\CLINIC\BusinessLogicLibrary\bin\Release\BusinessLogicLayer.pdb
+F:\Project\CLINIC\BusinessLogicLibrary\bin\Release\DataAccessLayer.dll
+F:\Project\CLINIC\BusinessLogicLibrary\bin\Release\DataAccessLayer.pdb
+F:\Project\CLINIC\BusinessLogicLibrary\obj\Release\BusinessLogicLayer.dll
+F:\Project\CLINIC\BusinessLogicLibrary\obj\Release\BusinessLogicLayer.pdb
