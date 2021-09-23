@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Access" xml:space="preserve">
+    <value>خطاي دسترسي</value>
+  </data>
+  <data name="AccessConfirmation" xml:space="preserve">
+    <value>سند الصاق شده موجود نمي باشد</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>انصراف</value>
+  </data>
+  <data name="Change" xml:space="preserve">
+    <value>تغيير</value>
+  </data>
+  <data name="ChangeConfirmation" xml:space="preserve">
+    <value>آیا از تغییر کاربر اطمینان دارید؟</value>
+  </data>
+  <data name="CreateButtonText" xml:space="preserve">
+    <value>ایجاد</value>
+  </data>
+  <data name="Dangerous" xml:space="preserve">
+    <value>هشدار</value>
+  </data>
+  <data name="DangerousConfirmation" xml:space="preserve">
+    <value>بیمار دارای بیماری(های) خطرناک می باشد</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>حذف</value>
+  </data>
+  <data name="DeleteConfirmation" xml:space="preserve">
+    <value>آیا از حذف اطمینان دارید؟</value>
+  </data>
+  <data name="DeletedColor" xml:space="preserve">
+    <value>رنگ انتخاب شده برای این دندان در پایگاه داده موجود نمی باشد</value>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>خروج</value>
+  </data>
+  <data name="ExitConfirmation" xml:space="preserve">
+    <value>آیا از خارج شدن اطمینان دارید؟</value>
+  </data>
+  <data name="IncorrectNewPassword" xml:space="preserve">
+    <value>کلمه عبور جدید، باید با تایید کلمه عبور مطابقت داشته باشد</value>
+  </data>
+  <data name="IncorrectOldPassword" xml:space="preserve">
+    <value>کلمه عبور قبلی اشتباه است.</value>
+  </data>
+  <data name="IncorrectUser" xml:space="preserve">
+    <value>نام کاربر و یا کلمه عبور اشتباه می باشد</value>
+  </data>
+  <data name="Insert" xml:space="preserve">
+    <value>ايجاد</value>
+  </data>
+  <data name="InvalidLength" xml:space="preserve">
+    <value>طول کلمه عبور جدید حداقل باید 5 کاراکتر باشد</value>
+  </data>
+  <data name="OldPasswordCanNotBeNull" xml:space="preserve">
+    <value>ثبت کاربر بدون کلمه عبور قبلی امکان پذیر نیست</value>
+  </data>
+  <data name="PasswordCanNotBeNull" xml:space="preserve">
+    <value>ثبت کاربر بدون کلمه عبور امکان پذیر نیست</value>
+  </data>
+  <data name="PasswordChanged" xml:space="preserve">
+    <value>      .کلمه عبور تغییر کرد         </value>
+  </data>
+  <data name="PasswordChangedTitle" xml:space="preserve">
+    <value>تغییر کلمه عبور</value>
+  </data>
+  <data name="SettingConfirmMessage" xml:space="preserve">
+    <value>آیا از اعمال تغییرات اطمینان دارید؟</value>
+  </data>
+  <data name="Successed" xml:space="preserve">
+    <value>عملیات مورد نظر با موفقیت صورت گرفت</value>
+  </data>
+  <data name="SuccessFullBackup" xml:space="preserve">
+    <value>تهیه نسخه پشتیبان با موفقیت صورت گرفت</value>
+  </data>
+  <data name="SuccessFullRestoreBackup" xml:space="preserve">
+    <value>بازگرداندن نسخه پشتیبان با موفقیت صورت گرفت</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>ويرايش</value>
+  </data>
+  <data name="UpdateConfirmation" xml:space="preserve">
+    <value>آیا از اعمال تغییرات اطمینان دارید؟</value>
+  </data>
+  <data name="UpdateSuccess" xml:space="preserve">
+    <value>عملیات بروز رسانی با موفقیت انجام شد</value>
+  </data>
+  <data name="UserIsLock" xml:space="preserve">
+    <value>نام کاربری مورد نظر  Lock  می باشد، لطفا با مدیر سیستم تماس بگیرید.</value>
+  </data>
+  <data name="Backup" xml:space="preserve">
+    <value>پشتیان گیری</value>
+  </data>
+  <data name="BackupConfirmation" xml:space="preserve">
+    <value>آیا قصد پشتیبان گیری دارید؟</value>
+  </data>
+</root>
