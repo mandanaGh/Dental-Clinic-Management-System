@@ -1,0 +1,5 @@
+F:\Project\CLINIC\Scanner\bin\Release\Scanner.dll
+F:\Project\CLINIC\Scanner\bin\Release\Scanner.pdb
+F:\Project\CLINIC\Scanner\obj\Release\ResolveAssemblyReference.cache
+F:\Project\CLINIC\Scanner\obj\Release\Scanner.dll
+F:\Project\CLINIC\Scanner\obj\Release\Scanner.pdb

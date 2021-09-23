@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="CLINIC">
+</Property><Property Name="Solution File" Value="C:\Users\Mandana\Desktop\CLINIC\CLINIC.sln">
+</Property><Property Name="Date" Value="Monday, February 07, 2011">
+</Property><Property Name="Time" Value="16:18 PM">
+</Property></Properties><Event ErrorLevel="0" Project="UserInterfaceLayer" Source="CLINIC\UserInterfaceLayer.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="UserInterfaceLayer" Source="CLINIC\UserInterfaceLayer.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="DataAccessLayer" Source="DataAccessLibrary\DataAccessLayer.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="DataAccessLayer" Source="DataAccessLibrary\DataAccessLayer.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="ComplexDataType" Source="ComplexDataType\ComplexDataType.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="ComplexDataType" Source="ComplexDataType\ComplexDataType.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="BusinessLogicLayer" Source="BusinessLogicLibrary\BusinessLogicLayer.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="BusinessLogicLayer" Source="BusinessLogicLibrary\BusinessLogicLayer.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="BusinessObjectLayer" Source="BusinessObjectLayer\BusinessObjectLayer.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="BusinessObjectLayer" Source="BusinessObjectLayer\BusinessObjectLayer.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="DataObjectLayer" Source="DataAccessObjectLayer\DataObjectLayer.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="DataObjectLayer" Source="DataAccessObjectLayer\DataObjectLayer.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="DataConvertor" Source="DataConvertor\DataConvertor.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="DataConvertor" Source="DataConvertor\DataConvertor.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Scanner" Source="Scanner\Scanner.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Scanner" Source="Scanner\Scanner.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="CLINIC.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="CLINIC.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="DataAccessLayer" Source="DataAccessLibrary\DataAccessLayer.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="DataObjectLayer" Source="DataAccessObjectLayer\DataObjectLayer.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="ComplexDataType" Source="ComplexDataType\ComplexDataType.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="UserInterfaceLayer" Source="CLINIC\UserInterfaceLayer.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="BusinessLogicLayer" Source="BusinessLogicLibrary\BusinessLogicLayer.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="BusinessObjectLayer" Source="BusinessObjectLayer\BusinessObjectLayer.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="DataConvertor" Source="DataConvertor\DataConvertor.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Scanner" Source="Scanner\Scanner.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

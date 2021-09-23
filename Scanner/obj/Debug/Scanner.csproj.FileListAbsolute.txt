@@ -1,0 +1,15 @@
+F:\Project\CLINIC\Scanner\bin\Debug\Scanner.dll
+F:\Project\CLINIC\Scanner\bin\Debug\Scanner.pdb
+F:\Project\CLINIC\Scanner\obj\Debug\ResolveAssemblyReference.cache
+F:\Project\CLINIC\Scanner\obj\Debug\Scanner.dll
+F:\Project\CLINIC\Scanner\obj\Debug\Scanner.pdb
+C:\Users\Mandana\Desktop\CLINIC\Scanner\bin\Debug\Scanner.dll
+C:\Users\Mandana\Desktop\CLINIC\Scanner\bin\Debug\Scanner.pdb
+C:\Users\Mandana\Desktop\CLINIC\Scanner\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Mandana\Desktop\CLINIC\Scanner\obj\Debug\Scanner.dll
+C:\Users\Mandana\Desktop\CLINIC\Scanner\obj\Debug\Scanner.pdb
+D:\Project\CLINIC\Scanner\bin\Debug\Scanner.dll
+D:\Project\CLINIC\Scanner\bin\Debug\Scanner.pdb
+D:\Project\CLINIC\Scanner\obj\Debug\ResolveAssemblyReference.cache
+D:\Project\CLINIC\Scanner\obj\Debug\Scanner.dll
+D:\Project\CLINIC\Scanner\obj\Debug\Scanner.pdb
