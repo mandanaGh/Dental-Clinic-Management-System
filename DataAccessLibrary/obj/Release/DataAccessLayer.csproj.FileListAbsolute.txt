@@ -1,0 +1,13 @@
+F:\Project\CLINIC\DataAccessLibrary\bin\Release\BusinessObjectLayer.dll
+F:\Project\CLINIC\DataAccessLibrary\bin\Release\ComplexDataType.dll
+F:\Project\CLINIC\DataAccessLibrary\bin\Release\DataConvertor.dll
+F:\Project\CLINIC\DataAccessLibrary\bin\Release\DataObjectLayer.dll
+F:\Project\CLINIC\DataAccessLibrary\bin\Release\ComplexDataType.pdb
+F:\Project\CLINIC\DataAccessLibrary\bin\Release\DataConvertor.pdb
+F:\Project\CLINIC\DataAccessLibrary\bin\Release\DataObjectLayer.pdb
+F:\Project\CLINIC\DataAccessLibrary\bin\Release\BusinessObjectLayer.pdb
+F:\Project\CLINIC\DataAccessLibrary\obj\Release\ResolveAssemblyReference.cache
+F:\Project\CLINIC\DataAccessLibrary\bin\Release\DataAccessLayer.dll
+F:\Project\CLINIC\DataAccessLibrary\bin\Release\DataAccessLayer.pdb
+F:\Project\CLINIC\DataAccessLibrary\obj\Release\DataAccessLayer.dll
+F:\Project\CLINIC\DataAccessLibrary\obj\Release\DataAccessLayer.pdb

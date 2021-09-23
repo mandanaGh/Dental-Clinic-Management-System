@@ -1,0 +1,5 @@
+F:\Project\CLINIC\ComplexDataType\bin\Release\ComplexDataType.dll
+F:\Project\CLINIC\ComplexDataType\bin\Release\ComplexDataType.pdb
+F:\Project\CLINIC\ComplexDataType\obj\Release\ResolveAssemblyReference.cache
+F:\Project\CLINIC\ComplexDataType\obj\Release\ComplexDataType.dll
+F:\Project\CLINIC\ComplexDataType\obj\Release\ComplexDataType.pdb

@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{55758E78-CCBF-49CF-B93C-8F725C8A9C73}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DataAccessLayer</RootNamespace>
+    <AssemblyName>DataAccessLayer</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.SqlServer.ConnectionInfo, Version=9.0.242.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.Smo, Version=9.0.242.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccessDAL.cs" />
+    <Compile Include="ConnectionDAL.cs" />
+    <Compile Include="AppointmentTypeDAL.cs" />
+    <Compile Include="CityDAL.cs" />
+    <Compile Include="SubjectDAL.cs" />
+    <Compile Include="PhoneBookDAL.cs" />
+    <Compile Include="LaboratoryServiceDAL.cs" />
+    <Compile Include="LaboratoryDAL.cs" />
+    <Compile Include="LaboratoryStateDAL.cs" />
+    <Compile Include="DatabaseDAL.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\LaboratoryReportDAL.cs" />
+    <Compile Include="Report\PatientListReportDAL.cs" />
+    <Compile Include="Report\PrescriptionListReportDAL.cs" />
+    <Compile Include="Report\CostReportDAL.cs" />
+    <Compile Include="SecurityDAL.cs" />
+    <Compile Include="ServiceHistoryDAL.cs" />
+    <Compile Include="JobDAL.cs" />
+    <Compile Include="ToothColorDAL.cs" />
+    <Compile Include="DoctorDAL.cs" />
+    <Compile Include="RecieveDAL.cs" />
+    <Compile Include="ServiceDAL.cs" />
+    <Compile Include="SpecialistDAL.cs" />
+    <Compile Include="DiseasesDAL.cs" />
+    <Compile Include="EquipmentDAL.cs" />
+    <Compile Include="EquipmentHistoryDAL.cs" />
+    <Compile Include="ExceptionHandlerDAL.cs" />
+    <Compile Include="ImageDAL.cs" />
+    <Compile Include="InsuranceTypeDAL.cs" />
+    <Compile Include="PatientDAL.cs" />
+    <Compile Include="PatientDiseasesDAL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="RoleDAL.cs" />
+    <Compile Include="ServerDAL.cs" />
+    <Compile Include="ServiceTypeDAL.cs" />
+    <Compile Include="UserDAL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Sql.Server.Express.9.2">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2005 Express Edition SP2 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessObjectLayer\BusinessObjectLayer.csproj">
+      <Project>{093AB4DF-87B0-4498-B048-7E21E35881A1}</Project>
+      <Name>BusinessObjectLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ComplexDataType\ComplexDataType.csproj">
+      <Project>{8248F680-4E16-4296-9CE6-04BFCEB925AF}</Project>
+      <Name>ComplexDataType %28ComplexDataType\ComplexDataType%29</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccessObjectLayer\DataObjectLayer.csproj">
+      <Project>{3155953B-0C2A-4B6E-8346-827C2EC0FAFD}</Project>
+      <Name>DataObjectLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataConvertor\DataConvertor.csproj">
+      <Project>{449678DD-AD6E-421A-8ED8-9A1D6E2650B8}</Project>
+      <Name>DataConvertor</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
