@@ -1,0 +1,5 @@
+F:\Project\CLINIC\BusinessObjectLayer\bin\Release\BusinessObjectLayer.dll
+F:\Project\CLINIC\BusinessObjectLayer\bin\Release\BusinessObjectLayer.pdb
+F:\Project\CLINIC\BusinessObjectLayer\obj\Release\ResolveAssemblyReference.cache
+F:\Project\CLINIC\BusinessObjectLayer\obj\Release\BusinessObjectLayer.dll
+F:\Project\CLINIC\BusinessObjectLayer\obj\Release\BusinessObjectLayer.pdb

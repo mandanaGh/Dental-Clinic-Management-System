@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{093AB4DF-87B0-4498-B048-7E21E35881A1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BusinessObjectLayer</RootNamespace>
+    <AssemblyName>BusinessObjectLayer</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccessBOL.cs" />
+    <Compile Include="AppointmentTypeBOL.cs" />
+    <Compile Include="CityBOL.cs" />
+    <Compile Include="SubjectBOL.cs" />
+    <Compile Include="PhoneBookBOL.cs" />
+    <Compile Include="LaboratoryServiceBOL.cs" />
+    <Compile Include="LaboratoryBOL.cs" />
+    <Compile Include="LaboratoryStateBOL.cs" />
+    <Compile Include="Report\LaboratoryReportBOL.cs" />
+    <Compile Include="Report\PatientListReportBOL.cs" />
+    <Compile Include="Report\PrescriptionListReportBOL.cs" />
+    <Compile Include="Report\CostReportBOL.cs">
+    </Compile>
+    <Compile Include="SecurityBOL.cs" />
+    <Compile Include="ServiceHistoryBOL.cs" />
+    <Compile Include="JobBOL.cs" />
+    <Compile Include="ToothColorBOL.cs" />
+    <Compile Include="DoctorBOL.cs" />
+    <Compile Include="RecieveBOL.cs" />
+    <Compile Include="ServiceBOL.cs" />
+    <Compile Include="SpecialistBOL.cs" />
+    <Compile Include="DiseasesBOL.cs" />
+    <Compile Include="EquipmentBOL.cs" />
+    <Compile Include="EquipmentHistoryBOL.cs" />
+    <Compile Include="ExceptionHandlerBOL.cs" />
+    <Compile Include="ImageBOL.cs" />
+    <Compile Include="InsuranceTypeBOL.cs" />
+    <Compile Include="ListItem.cs" />
+    <Compile Include="PatientBOL.cs" />
+    <Compile Include="PatientDiseasesBOL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoleBOL.cs" />
+    <Compile Include="ServiceTypeBOL.cs" />
+    <Compile Include="UserBOL.cs" />
+    <Compile Include="UserProfile.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
