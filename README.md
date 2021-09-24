@@ -5,7 +5,7 @@ Dental Clinic Management System (DCMS) is a streamlined and standardized electro
 <p align="center">
 <img src="https://github.com/mandanaGh/Dental-Clinic-Management-System/blob/main/images/Dental%20Assistant.png" width="800"></p>
 
-# Building and deploying with Microsoft Visual Studio 2010
+### Building and deploying with Microsoft Visual Studio 2010
 ```
 1. Open the SLN file: File > Open Project, select the file CLINIC.sln.
 2. Select the target, either emulator or device.
